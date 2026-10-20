@@ -8,4 +8,7 @@ describe('App', () => {
     const wrapper = mount(App)
     expect(wrapper.text()).toContain('You did it!')
   })
+  it('should fail intentionally', () => {
+  expect(1).toBe(2)
+})
 })
