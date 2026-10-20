@@ -3,16 +3,18 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test:unit": "vitest",
+    "test:unit": "vitest run",
     "test:e2e": "playwright test",
     "lint": "run-s \"lint:*\"",
-    "lint:oxlint": "oxlint . --fix",
-    "lint:eslint": "eslint . --fix --cache"
-  },
+    "lint:oxlint": "oxlint .",
+    "lint:eslint": "eslint ."
+  }
+  ,
   "dependencies": {
     "vue": "^3.5.40"
   },
